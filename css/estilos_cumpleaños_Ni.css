@@ -1,0 +1,43 @@
+h1{
+    color:black;
+    animation: mover-izquierda-derecha 8s infinite;
+}
+
+@keyframes mover-izquierda-derecha {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+ul{
+    /*para que no me ponga ningun icono al incio de los elementos de la lista*/
+    list-style-type: none ;
+    background-color: #457b9d;
+    /*para que la lista se muestre de manera independiente en un renglon con esto se aggr a un marqgin y un padding por defecto*/
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+li{
+    /*para que los elementos se muestren horizontalmente*/
+    float: left;
+}
+
+/*li a con esto podemos acceder los links que estan dentro de los li */
+li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 15px;
+    /*para que no se agregue el subrayado en este link*/
+    text-decoration: none;
+}
+
+/*hover propiedad de que cuando estemos arriba de algun link cambie de color*/
+li a :hover{
+    background-color:chocolate;
+
+}
